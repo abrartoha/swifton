@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fdfcfa;
+  --foreground: #0f2542;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  ::selection {
+    background-color: #c9a24b;
+    color: #08182d;
+  }
+}
+
+@layer components {
+  /* Layout container used across every page */
+  .container-page {
+    @apply mx-auto w-full max-w-content px-6 md:px-10;
+  }
+
+  /* Small uppercase eyebrow label above section titles */
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-gold-600;
+  }
+
+  /* A thin gold rule used as an accent divider */
+  .gold-rule {
+    @apply h-px w-12 bg-gold-500;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3
+           text-sm font-medium transition-colors duration-200
+           focus-visible:outline-none focus-visible:ring-2
+           focus-visible:ring-gold-500 focus-visible:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn bg-navy-900 text-white hover:bg-navy-800;
+  }
+
+  .btn-gold {
+    @apply btn bg-gold-500 text-navy-950 hover:bg-gold-400;
+  }
+
+  .btn-outline {
+    @apply btn border border-navy-200 text-navy-900 hover:bg-navy-50;
+  }
+
+  .field-label {
+    @apply mb-1.5 block text-sm font-medium text-navy-800;
+  }
+
+  .field {
+    @apply w-full rounded-lg border border-navy-200 bg-white px-4 py-2.5 text-navy-900
+           placeholder:text-navy-400 transition
+           focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/30;
+  }
+}
