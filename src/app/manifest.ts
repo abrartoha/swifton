@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Swifton Group — Family of Brands",
     short_name: "Swifton Group",
     description:
-      "A Melbourne-based family of independent Australian brands spanning vehicle rental, hospitality, security, education and mobility.",
+      "A Melbourne-based family of independent Australian brands spanning vehicle rental, hospitality, security and mobility.",
     start_url: "/",
     display: "standalone",
     background_color: "#fdfcfa",

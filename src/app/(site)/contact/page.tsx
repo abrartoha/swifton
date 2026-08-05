@@ -7,7 +7,7 @@ import { BreadcrumbJsonLd } from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "Contact Us — Get in Touch with Swifton Group Melbourne",
   description:
-    "Contact Swifton Group head office in Melbourne. Send an enquiry to the right brand team — vehicle rental, hospitality, security, education, or careers. We respond promptly.",
+    "Contact Swifton Group head office in Melbourne. Send an enquiry to the right brand team — vehicle rental, hospitality, security, or careers. We respond promptly.",
   alternates: { canonical: "https://swiftongroup.com.au/contact" },
   openGraph: {
     title: "Contact Swifton Group",

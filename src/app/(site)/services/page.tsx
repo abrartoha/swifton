@@ -5,14 +5,14 @@ import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import { AnimatedGrid } from "@/components/AnimatedGrid";
 
 export const metadata: Metadata = {
-  title: "Services — Vehicle Rental, Hospitality, Security & Education",
+  title: "Services — Vehicle Rental, Hospitality & Security",
   description:
-    "Explore the services delivered across Swifton Group brands: vehicle rental and rideshare fleet, professional housekeeping, licensed security personnel, and education and migration guidance across Australia.",
+    "Explore the services delivered across Swifton Group brands: vehicle rental and rideshare fleet, professional housekeeping, and licensed security personnel across Australia.",
   alternates: { canonical: "https://swiftongroup.com.au/services" },
   openGraph: {
     title: "Services — Swifton Group",
     description:
-      "Vehicle rental, hospitality, security, and education services delivered by our family of Australian brands.",
+      "Vehicle rental, hospitality, and security services delivered by our family of Australian brands.",
     url: "https://swiftongroup.com.au/services",
   },
 };
@@ -53,14 +53,6 @@ const fallbackServices: Omit<ServiceRow, "id">[] = [
     summary:
       "Licensed security personnel for hotels, pubs, clubs, and private or public events, coordinated through a unified staff system.",
     outcome: "Compliant, reliable crowd and venue safety.",
-    image_url: null,
-  },
-  {
-    title: "Education & migration guidance",
-    brand: "Swifton Global",
-    summary:
-      "Course pathways, certifications, and migration services with clear fees and expert, end-to-end support for students.",
-    outcome: "Guiding students from enrolment to arrival.",
     image_url: null,
   },
 ];

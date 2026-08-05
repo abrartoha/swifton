@@ -77,9 +77,9 @@ export default function HomePage() {
           </h1>
           <p className="mt-8 max-w-2xl animate-fade-in-up text-lg leading-relaxed text-navy-200 md:text-xl" style={{ animationDelay: "0.15s" }}>
             Swifton Group brings together independent Australian businesses
-            across vehicle rental, hospitality, security, education and
-            mobility — each with its own identity, all backed by the same
-            standard of trust and care.
+            across vehicle rental, hospitality, security and mobility — each
+            with its own identity, all backed by the same standard of trust
+            and care.
           </p>
           <div className="mt-10 flex animate-fade-in-up flex-wrap gap-4" style={{ animationDelay: "0.3s" }}>
             <Link href="#brands" className="btn-gold">

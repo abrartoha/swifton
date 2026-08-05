@@ -19,24 +19,21 @@ const sans = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://swiftongroup.com.au"),
   title: {
-    default: `${site.tradingName} — Australian Family of Brands | Vehicle Rental, Hospitality, Security & Education`,
+    default: `${site.tradingName} — Australian Family of Brands | Vehicle Rental, Hospitality, Security & Mobility`,
     template: `%s | ${site.tradingName}`,
   },
   description:
-    "Swifton Group is a Melbourne-based family of independent Australian brands spanning vehicle rental, hospitality, security, education and mobility. Trusted foundation serving businesses and communities across Australia.",
+    "Swifton Group is a Melbourne-based family of independent Australian brands spanning vehicle rental, hospitality, security and mobility. Trusted foundation serving businesses and communities across Australia.",
   keywords: [
     "Swifton Group",
     "Australian business group",
     "vehicle rental Australia",
     "hospitality services Melbourne",
     "security contracting",
-    "education migration Australia",
     "Swifton Rentals",
     "Swifton Hospitality",
     "Swifton Security",
-    "Swifton Global",
     "RideNexx",
-    "Edu Connect",
     "Melbourne business",
     "family of brands",
   ],
@@ -51,7 +48,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${site.tradingName} — Australian Family of Brands`,
     description:
-      "A Melbourne-based family of independent Australian brands — vehicle rental, hospitality, security, education and mobility — built on one trusted foundation.",
+      "A Melbourne-based family of independent Australian brands — vehicle rental, hospitality, security and mobility — built on one trusted foundation.",
     siteName: site.tradingName,
     locale: "en_AU",
     type: "website",
@@ -69,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${site.tradingName} — Australian Family of Brands`,
     description:
-      "A Melbourne-based family of independent Australian brands — vehicle rental, hospitality, security, education and mobility.",
+      "A Melbourne-based family of independent Australian brands — vehicle rental, hospitality, security and mobility.",
     images: ["/images/logo-square.png"],
   },
   robots: {

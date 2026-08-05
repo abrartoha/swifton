@@ -66,16 +66,6 @@ export const brands: Brand[] = [
     status: "live",
   },
   {
-    slug: "global",
-    name: "Swifton Global",
-    category: "Education & Migration",
-    summary:
-      "Education pathways and migration services — courses, certifications, and expert guidance.",
-    href: "https://swiftonglobal.com.au",
-    external: true,
-    status: "live",
-  },
-  {
     slug: "ridenexx",
     name: "RideNexx",
     category: "Mobility",
@@ -85,16 +75,6 @@ export const brands: Brand[] = [
     external: true,
     status: "coming-soon",
   },
-  {
-    slug: "edu-connect",
-    name: "Edu Connect",
-    category: "Education",
-    summary:
-      "An established education platform within the Swifton family of brands.",
-    href: "https://educonnect.com.au",
-    external: true,
-    status: "live",
-  },
 ];
 
 /** Enquiry destinations used by the contact form dropdown. */
@@ -103,7 +83,6 @@ export const enquiryDestinations = [
   { value: "rentals", label: "Swifton Rentals" },
   { value: "hospitality", label: "Swifton Hospitality" },
   { value: "security", label: "Swifton Security" },
-  { value: "global", label: "Swifton Global" },
   { value: "ridenexx", label: "RideNexx" },
   { value: "careers", label: "Careers / Recruitment" },
 ] as const;
