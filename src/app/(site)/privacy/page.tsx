@@ -21,7 +21,7 @@ export default function PrivacyPage() {
         <p className="text-sm text-navy-500">Last updated: {new Date().getFullYear()}</p>
 
         <Section title="1. Who we are">
-          {site.legalName} (ABN {site.abn}, ACN {site.acn}) operates the Swifton
+          {site.legalName} (ABN {site.abn}) operates the Swifton
           Group family of brands. This policy applies to the Swifton Group
           website and the group&apos;s handling of personal information across
           our brands.

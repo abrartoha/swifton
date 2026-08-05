@@ -117,7 +117,7 @@ export function Footer() {
             © {new Date().getFullYear()} {site.legalName}. All rights reserved.
           </p>
           <p>
-            ABN {site.abn} &nbsp;·&nbsp; ACN {site.acn}
+            ABN {site.abn}
           </p>
         </div>
       </div>

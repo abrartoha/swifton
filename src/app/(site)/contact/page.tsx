@@ -64,7 +64,7 @@ export default function ContactPage() {
                 <p>
                   {site.legalName}
                   <br />
-                  ABN {site.abn} · ACN {site.acn}
+                  ABN {site.abn}
                 </p>
               </div>
             </address>

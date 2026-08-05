@@ -8,7 +8,6 @@ export const site = {
   tradingName: "Swifton Group",
   tagline: "A family of independent brands, built on one foundation.",
   abn: process.env.NEXT_PUBLIC_GROUP_ABN ?? "00 000 000 000",
-  acn: process.env.NEXT_PUBLIC_GROUP_ACN ?? "000 000 000",
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "info@swiftongroup.com.au",
   address: {
     line1: "Suite 2, Level 9",

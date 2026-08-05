@@ -110,10 +110,6 @@ export default function AboutPage() {
                   <dd className="text-navy-900">{site.abn}</dd>
                 </div>
                 <div>
-                  <dt className="font-medium text-navy-500">ACN</dt>
-                  <dd className="text-navy-900">{site.acn}</dd>
-                </div>
-                <div>
                   <dt className="font-medium text-navy-500">Contact</dt>
                   <dd>
                     <a
