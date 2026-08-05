@@ -17,11 +17,11 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-navy-100/70 bg-sand-50/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 animate-fade-in-down border-b border-navy-100/70 bg-sand-50/80 backdrop-blur-md">
       <div className="container-page flex h-20 items-center justify-between">
         <Logo />
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav aria-label="Main navigation" className="hidden items-center gap-8 md:flex">
           {nav.map((item) => {
             const active = pathname === item.href;
             return (

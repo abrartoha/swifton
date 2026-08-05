@@ -2,11 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader, SectionHeading } from "@/components/ui";
 import { createClient } from "@/lib/supabase/server";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import { AnimatedGrid } from "@/components/AnimatedGrid";
 
 export const metadata: Metadata = {
-  title: "Careers",
+  title: "Careers — Join the Swifton Family | Jobs in Melbourne Australia",
   description:
-    "Open positions across the Swifton Group family of brands. Apply and track your application from received to decision.",
+    "Browse open positions across Swifton Group brands — hospitality, security, vehicle rental, and education roles in Melbourne and across Australia. Apply online and track your application.",
+  alternates: { canonical: "https://swiftongroup.com.au/careers" },
+  openGraph: {
+    title: "Careers at Swifton Group",
+    description:
+      "Join the Swifton family. Open positions in hospitality, security, vehicle rental, and education across Australia.",
+    url: "https://swiftongroup.com.au/careers",
+  },
 };
 
 export const dynamic = "force-dynamic";
@@ -43,6 +52,12 @@ export default async function CareersPage() {
 
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Careers", href: "/careers" },
+        ]}
+      />
       <PageHeader
         eyebrow="Careers"
         title="Join the Swifton family."
@@ -56,22 +71,25 @@ export default async function CareersPage() {
           title="Our application process"
           align="center"
         />
-        <ol className="mt-12 grid gap-6 md:grid-cols-4">
-          {stages.map((s) => (
-            <li
-              key={s.n}
-              className="relative rounded-2xl border border-navy-100 bg-white p-6"
-            >
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-navy-900 font-serif text-lg font-semibold text-gold-400">
-                {s.n}
-              </span>
-              <h3 className="mt-4 font-semibold text-navy-900">{s.t}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-navy-600">
-                {s.d}
-              </p>
-            </li>
-          ))}
-        </ol>
+        <AnimatedGrid className="mt-12 grid gap-6 md:grid-cols-4" stagger={120}>
+          {stages.map((s) => {
+            const stepColors = ["bg-brand-red", "bg-brand-orange", "bg-brand-green", "bg-brand-blue"];
+            return (
+              <li
+                key={s.n}
+                className="relative list-none rounded-2xl border border-navy-100 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              >
+                <span className={`flex h-10 w-10 items-center justify-center rounded-full ${stepColors[s.n - 1]} font-serif text-lg font-semibold text-white`}>
+                  {s.n}
+                </span>
+                <h3 className="mt-4 font-semibold text-navy-900">{s.t}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-navy-600">
+                  {s.d}
+                </p>
+              </li>
+            );
+          })}
+        </AnimatedGrid>
         <p className="mt-8 text-center text-sm text-navy-500">
           Once you apply, you can track your progress through these stages from
           your applicant login.

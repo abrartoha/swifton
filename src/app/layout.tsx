@@ -19,20 +19,78 @@ const sans = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://swiftongroup.com.au"),
   title: {
-    default: `${site.tradingName} — Family of Brands`,
-    template: `%s · ${site.tradingName}`,
+    default: `${site.tradingName} — Australian Family of Brands | Vehicle Rental, Hospitality, Security & Education`,
+    template: `%s | ${site.tradingName}`,
   },
   description:
-    "Swifton Group is a family of independent Australian brands spanning vehicle rental, hospitality, security, education and mobility — built on one trusted foundation.",
+    "Swifton Group is a Melbourne-based family of independent Australian brands spanning vehicle rental, hospitality, security, education and mobility. Trusted foundation serving businesses and communities across Australia.",
+  keywords: [
+    "Swifton Group",
+    "Australian business group",
+    "vehicle rental Australia",
+    "hospitality services Melbourne",
+    "security contracting",
+    "education migration Australia",
+    "Swifton Rentals",
+    "Swifton Hospitality",
+    "Swifton Security",
+    "Swifton Global",
+    "RideNexx",
+    "Edu Connect",
+    "Melbourne business",
+    "family of brands",
+  ],
+  authors: [{ name: site.legalName }],
+  creator: site.legalName,
+  publisher: site.legalName,
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
-    title: `${site.tradingName} — Family of Brands`,
+    title: `${site.tradingName} — Australian Family of Brands`,
     description:
-      "A family of independent Australian brands, built on one trusted foundation.",
+      "A Melbourne-based family of independent Australian brands — vehicle rental, hospitality, security, education and mobility — built on one trusted foundation.",
     siteName: site.tradingName,
     locale: "en_AU",
     type: "website",
+    url: "https://swiftongroup.com.au",
+    images: [
+      {
+        url: "/images/logo-square.png",
+        width: 1080,
+        height: 1080,
+        alt: "Swifton Group — Family of Brands",
+      },
+    ],
   },
-  robots: { index: true, follow: true },
+  twitter: {
+    card: "summary_large_image",
+    title: `${site.tradingName} — Australian Family of Brands`,
+    description:
+      "A Melbourne-based family of independent Australian brands — vehicle rental, hospitality, security, education and mobility.",
+    images: ["/images/logo-square.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://swiftongroup.com.au",
+  },
+  verification: {
+    // Add your verification codes when ready:
+    // google: "your-google-verification-code",
+    // yandex: "your-yandex-verification-code",
+  },
 };
 
 export default function RootLayout({
@@ -40,6 +98,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en-AU" className={`${serif.variable} ${sans.variable}`}>
+      <head>
+        <link rel="icon" href="/images/logo-icon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/logo-square.png" />
+      </head>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );

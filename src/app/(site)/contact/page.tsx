@@ -2,17 +2,31 @@ import type { Metadata } from "next";
 import { PageHeader } from "@/components/ui";
 import { site } from "@/lib/site";
 import { ContactForm } from "./ContactForm";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact Us — Get in Touch with Swifton Group Melbourne",
   description:
-    "Get in touch with Swifton Group. Your enquiry is routed to the right brand's team.",
+    "Contact Swifton Group head office in Melbourne. Send an enquiry to the right brand team — vehicle rental, hospitality, security, education, or careers. We respond promptly.",
+  alternates: { canonical: "https://swiftongroup.com.au/contact" },
+  openGraph: {
+    title: "Contact Swifton Group",
+    description:
+      "Get in touch with Swifton Group. Your enquiry is routed to the right brand team.",
+    url: "https://swiftongroup.com.au/contact",
+  },
 };
 
 export default function ContactPage() {
   const { address } = site;
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Contact", href: "/contact" },
+        ]}
+      />
       <PageHeader
         eyebrow="Contact"
         title="Let's talk."

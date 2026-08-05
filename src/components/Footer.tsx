@@ -5,7 +5,14 @@ import { brands, site } from "@/lib/site";
 export function Footer() {
   const { address } = site;
   return (
-    <footer className="mt-24 border-t border-navy-800 bg-navy-950 text-navy-200">
+    <footer aria-label="Site footer" className="mt-24 bg-navy-950 text-navy-200">
+      {/* Colorful top border */}
+      <div
+        className="h-1"
+        style={{
+          background: "linear-gradient(90deg, #e52528, #f7a823, #8dc63f, #00aeef)",
+        }}
+      />
       <div className="container-page py-16">
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
           <div className="max-w-sm">
@@ -21,7 +28,7 @@ export function Footer() {
               <br />
               <a
                 href={`mailto:${site.email}`}
-                className="text-gold-400 hover:text-gold-300"
+                className="text-brand-blue transition-colors hover:text-brand-blue/80"
               >
                 {site.email}
               </a>
@@ -37,7 +44,7 @@ export function Footer() {
                 <li key={b.slug}>
                   <a
                     href={b.href}
-                    className="text-navy-300 transition-colors hover:text-white"
+                    className="text-navy-300 transition-all duration-300 hover:translate-x-1 hover:text-white"
                     {...(b.external
                       ? { target: "_blank", rel: "noopener noreferrer" }
                       : {})}

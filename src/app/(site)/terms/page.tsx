@@ -5,7 +5,8 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Terms & Conditions",
   description:
-    "The terms governing use of the Swifton Group website and services.",
+    "Terms and conditions governing use of the Swifton Group website and services. Governed by the laws of Victoria, Australia.",
+  alternates: { canonical: "https://swiftongroup.com.au/terms" },
 };
 
 export default function TermsPage() {

@@ -5,7 +5,8 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How Swifton Group collects, uses, stores, and protects your personal information.",
+    "How Swifton Group Pty Ltd collects, uses, stores, and protects your personal information in accordance with Australian Privacy Principles.",
+  alternates: { canonical: "https://swiftongroup.com.au/privacy" },
 };
 
 export default function PrivacyPage() {
