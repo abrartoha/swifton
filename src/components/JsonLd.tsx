@@ -10,7 +10,7 @@ function OrganizationJsonLd() {
     logo: "https://swiftongroup.com.au/images/logo-dark.png",
     image: "https://swiftongroup.com.au/images/logo-square.png",
     description:
-      "Swifton Group is a Melbourne-based family of independent Australian brands spanning vehicle rental, hospitality, security and mobility.",
+      "Swifton Group is a Melbourne-based family of independent Australian brands spanning vehicle rental, hospitality, cleaning, security and mobility.",
     address: {
       "@type": "PostalAddress",
       streetAddress: site.address.street,

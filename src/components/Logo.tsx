@@ -3,6 +3,11 @@ import Link from "next/link";
 
 /**
  * Swifton Group logo — uses the actual brand logo image.
+ *
+ * Two real assets rather than one filtered asset: the "light" variant keeps the
+ * four brand-colour figures and paints only the navy wordmark white, so it stays
+ * legible on navy backgrounds. Filtering the dark logo with `brightness-0 invert`
+ * would flatten the whole mark to a solid white silhouette and lose the colour.
  */
 export function Logo({
   variant = "dark",
@@ -12,12 +17,11 @@ export function Logo({
   return (
     <Link href="/" className="group inline-flex items-center gap-3">
       <Image
-        src="/images/logo-dark.png"
+        src={variant === "light" ? "/images/logo-light.png" : "/images/logo-dark.png"}
         alt="Swifton Group"
         width={180}
         height={48}
         priority
-        className={variant === "light" ? "brightness-0 invert" : ""}
       />
     </Link>
   );

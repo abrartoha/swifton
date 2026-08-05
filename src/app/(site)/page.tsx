@@ -10,7 +10,8 @@ export const metadata: Metadata = {
 };
 
 const stats = [
-  { value: "6", label: "Brands in the family", color: "text-brand-red" },
+  // Derived so the headline count can never drift from the actual brand list.
+  { value: String(brands.length), label: "Brands in the family", color: "text-brand-red" },
   { value: "1", label: "Trusted foundation", color: "text-brand-green" },
   { value: "AU", label: "Melbourne-based group", color: "text-brand-blue" },
 ];
@@ -77,9 +78,9 @@ export default function HomePage() {
           </h1>
           <p className="mt-8 max-w-2xl animate-fade-in-up text-lg leading-relaxed text-navy-200 md:text-xl" style={{ animationDelay: "0.15s" }}>
             Swifton Group brings together independent Australian businesses
-            across vehicle rental, hospitality, security and mobility — each
-            with its own identity, all backed by the same standard of trust
-            and care.
+            across vehicle rental, hospitality, cleaning, security and
+            mobility — each with its own identity, all backed by the same
+            standard of trust and care.
           </p>
           <div className="mt-10 flex animate-fade-in-up flex-wrap gap-4" style={{ animationDelay: "0.3s" }}>
             <Link href="#brands" className="btn-gold">

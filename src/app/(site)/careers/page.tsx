@@ -8,12 +8,12 @@ import { AnimatedGrid } from "@/components/AnimatedGrid";
 export const metadata: Metadata = {
   title: "Careers — Join the Swifton Family | Jobs in Melbourne Australia",
   description:
-    "Browse open positions across Swifton Group brands — hospitality, security, and vehicle rental roles in Melbourne and across Australia. Apply online and track your application.",
+    "Browse open positions across Swifton Group brands — hospitality, cleaning, security, and vehicle rental roles in Melbourne and across Australia. Apply online and track your application.",
   alternates: { canonical: "https://swiftongroup.com.au/careers" },
   openGraph: {
     title: "Careers at Swifton Group",
     description:
-      "Join the Swifton family. Open positions in hospitality, security, and vehicle rental across Australia.",
+      "Join the Swifton family. Open positions in hospitality, cleaning, security, and vehicle rental across Australia.",
     url: "https://swiftongroup.com.au/careers",
   },
 };

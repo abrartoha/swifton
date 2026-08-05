@@ -36,7 +36,7 @@ export type Brand = {
 export const brands: Brand[] = [
   {
     slug: "rentals",
-    name: "Swifton Rentals",
+    name: "Swifton Vehicle Rental",
     category: "Vehicle Rental",
     summary:
       "Cars, scooters, and electric cycles for rideshare and personal use, with a full self-service client portal.",
@@ -47,10 +47,20 @@ export const brands: Brand[] = [
   {
     slug: "hospitality",
     name: "Swifton Hospitality",
-    category: "Housekeeping & Cleaning",
+    category: "Housekeeping",
     summary:
-      "Professional housekeeping and cleaning contracting for hotels, venues, and commercial sites.",
+      "Professional housekeeping contracting for hotels, venues, and accommodation providers.",
     href: "https://swiftonhospitality.com.au",
+    external: true,
+    status: "live",
+  },
+  {
+    slug: "cleaning",
+    name: "Swifton Cleaning",
+    category: "Commercial Cleaning",
+    summary:
+      "Commercial and end-of-lease cleaning for offices, retail, and industrial sites, delivered by a trained, rostered workforce.",
+    href: "https://swiftoncleaning.com.au",
     external: true,
     status: "live",
   },
@@ -79,8 +89,9 @@ export const brands: Brand[] = [
 /** Enquiry destinations used by the contact form dropdown. */
 export const enquiryDestinations = [
   { value: "group", label: "Swifton Group (Head Office)" },
-  { value: "rentals", label: "Swifton Rentals" },
+  { value: "rentals", label: "Swifton Vehicle Rental" },
   { value: "hospitality", label: "Swifton Hospitality" },
+  { value: "cleaning", label: "Swifton Cleaning" },
   { value: "security", label: "Swifton Security" },
   { value: "ridenexx", label: "RideNexx" },
   { value: "careers", label: "Careers / Recruitment" },

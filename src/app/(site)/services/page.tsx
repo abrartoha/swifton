@@ -5,14 +5,14 @@ import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import { AnimatedGrid } from "@/components/AnimatedGrid";
 
 export const metadata: Metadata = {
-  title: "Services — Vehicle Rental, Hospitality & Security",
+  title: "Services — Vehicle Rental, Hospitality, Cleaning & Security",
   description:
-    "Explore the services delivered across Swifton Group brands: vehicle rental and rideshare fleet, professional housekeeping, and licensed security personnel across Australia.",
+    "Explore the services delivered across Swifton Group brands: vehicle rental and rideshare fleet, professional housekeeping, commercial cleaning, and licensed security personnel across Australia.",
   alternates: { canonical: "https://swiftongroup.com.au/services" },
   openGraph: {
     title: "Services — Swifton Group",
     description:
-      "Vehicle rental, hospitality, and security services delivered by our family of Australian brands.",
+      "Vehicle rental, hospitality, cleaning, and security services delivered by our family of Australian brands.",
     url: "https://swiftongroup.com.au/services",
   },
 };
@@ -33,18 +33,26 @@ type ServiceRow = {
 const fallbackServices: Omit<ServiceRow, "id">[] = [
   {
     title: "Vehicle rental & rideshare fleet",
-    brand: "Swifton Rentals",
+    brand: "Swifton Vehicle Rental",
     summary:
       "Cars, scooters, and electric cycles on flexible weekly terms, with a full self-service portal for agreements, invoices, and payments.",
     outcome: "Trusted by rideshare drivers and everyday renters.",
     image_url: null,
   },
   {
-    title: "Housekeeping & commercial cleaning",
+    title: "Housekeeping",
     brand: "Swifton Hospitality",
     summary:
-      "Professional housekeeping and cleaning contracts for hotels, venues, and commercial sites, delivered by a trained, rostered workforce.",
+      "Professional housekeeping contracts for hotels, venues, and accommodation providers, delivered by a trained, rostered workforce.",
     outcome: "Consistent standards across every site.",
+    image_url: null,
+  },
+  {
+    title: "Commercial cleaning",
+    brand: "Swifton Cleaning",
+    summary:
+      "Commercial and end-of-lease cleaning for offices, retail, and industrial sites, scoped to an agreed schedule and quality checklist.",
+    outcome: "Sites presented to standard, every visit.",
     image_url: null,
   },
   {

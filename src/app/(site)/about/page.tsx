@@ -7,12 +7,12 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "About Us — Melbourne Australian Business Group",
   description:
-    "Learn about Swifton Group, a Melbourne-based holding group operating independent Australian brands in vehicle rental, hospitality, security and mobility. ABN registered, Australian-owned.",
+    "Learn about Swifton Group, a Melbourne-based holding group operating independent Australian brands in vehicle rental, hospitality, cleaning, security and mobility. ABN registered, Australian-owned.",
   alternates: { canonical: "https://swiftongroup.com.au/about" },
   openGraph: {
     title: "About Swifton Group — Melbourne Australian Business Group",
     description:
-      "A Melbourne-based holding group bringing together businesses in vehicle rental, hospitality, security and mobility.",
+      "A Melbourne-based holding group bringing together businesses in vehicle rental, hospitality, cleaning, security and mobility.",
     url: "https://swiftongroup.com.au/about",
   },
 };
@@ -67,8 +67,9 @@ export default function AboutPage() {
               <SectionHeading eyebrow="Who we are" title="Group background" />
               <p>
                 Swifton Group Pty Ltd is a Melbourne-based holding group bringing
-                together businesses in vehicle rental, hospitality, security, and
-                mobility. What began as a set of individual ventures has grown
+                together businesses in vehicle rental, hospitality, cleaning,
+                security, and mobility. What began as a set of individual
+                ventures has grown
                 into a coordinated family of brands, each independent on the
                 surface and unified in the values beneath.
               </p>
