@@ -72,7 +72,7 @@ export default function PrivacyPage() {
 
         <Section title="7. Contact">
           For any privacy question or complaint, email {site.email} or write to
-          us at {site.address.line1}, {site.address.line2}, {site.address.city}{" "}
+          us at {site.address.street}, {site.address.city}{" "}
           {site.address.state} {site.address.postcode}, {site.address.country}.
         </Section>
       </article>

@@ -13,7 +13,7 @@ function OrganizationJsonLd() {
       "Swifton Group is a Melbourne-based family of independent Australian brands spanning vehicle rental, hospitality, security and mobility.",
     address: {
       "@type": "PostalAddress",
-      streetAddress: `${site.address.line1}, ${site.address.line2}`,
+      streetAddress: site.address.street,
       addressLocality: site.address.city,
       addressRegion: site.address.state,
       postalCode: site.address.postcode,
@@ -112,16 +112,18 @@ function LocalBusinessJsonLd() {
     email: site.email,
     address: {
       "@type": "PostalAddress",
-      streetAddress: `${site.address.line1}, ${site.address.line2}`,
+      streetAddress: site.address.street,
       addressLocality: site.address.city,
       addressRegion: site.address.state,
       postalCode: site.address.postcode,
       addressCountry: "AU",
     },
+    // Suburb-level coordinates for Sunshine VIC 3020. Replace with the exact
+    // rooftop position if the Google Business Profile listing is set up.
     geo: {
       "@type": "GeoCoordinates",
-      latitude: -37.8136,
-      longitude: 144.9631,
+      latitude: -37.7886,
+      longitude: 144.8321,
     },
     areaServed: {
       "@type": "Country",

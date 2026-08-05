@@ -10,11 +10,10 @@ export const site = {
   abn: process.env.NEXT_PUBLIC_GROUP_ABN ?? "00 000 000 000",
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "info@swiftongroup.com.au",
   address: {
-    line1: "Suite 2, Level 9",
-    line2: "2 Queen Street",
-    city: "Melbourne",
+    street: "12 Clarke St",
+    city: "Sunshine",
     state: "VIC",
-    postcode: "3000",
+    postcode: "3020",
     country: "Australia",
   },
 } as const;

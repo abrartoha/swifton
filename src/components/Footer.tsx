@@ -21,7 +21,7 @@ export function Footer() {
               {site.tagline}
             </p>
             <address className="mt-6 text-sm not-italic leading-relaxed text-navy-300">
-              {address.line1}, {address.line2}
+              {address.street}
               <br />
               {address.city} {address.state} {address.postcode},{" "}
               {address.country}

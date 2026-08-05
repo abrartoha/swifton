@@ -44,7 +44,7 @@ export default function ContactPage() {
               <div>
                 <p className="font-medium text-navy-500">Registered office</p>
                 <p>
-                  {address.line1}, {address.line2}
+                  {address.street}
                   <br />
                   {address.city} {address.state} {address.postcode},{" "}
                   {address.country}

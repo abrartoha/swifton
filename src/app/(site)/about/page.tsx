@@ -98,7 +98,7 @@ export default function AboutPage() {
                 <div>
                   <dt className="font-medium text-navy-500">Registered office</dt>
                   <dd className="text-navy-900">
-                    {address.line1}, {address.line2}
+                    {address.street}
                     <br />
                     {address.city} {address.state} {address.postcode},{" "}
                     {address.country}
